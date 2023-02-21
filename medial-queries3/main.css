@@ -1,3 +1,54 @@
 body {
   background: peachpuff;
 }
+* {
+  margin: 0;
+  padding:0;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  border: solid 1px red;
+}
+.a {
+  background-color: coral;
+  flex-basis: 100%;
+}
+.con-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 75%;
+}
+.h {
+  background-color: aquamarine;
+  flex-basis: 25%;
+}
+.b {
+  flex-basis: 33.3%;
+  background-color: red;
+}
+.c {
+  flex-basis: 33.3%;
+  background-color: black;
+}
+.d {
+  flex-basis: 33.3%;
+  background-color: darkgoldenrod;
+}
+.e {
+  flex-basis: 33.3%;
+  background-color: brown;
+}
+.f {
+  flex-basis: 33.3%;
+  background-color: chartreuse;
+}
+.g {
+  flex-basis: 33.3%;
+  background-color: white;
+}
+@media (max-width:600px){
+  .con-2,.a,.h{
+    flex-basis: 100%;
+  }}

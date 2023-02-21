@@ -1,3 +1,38 @@
-body {
-  background: blanchedalmond;
+* {
+  margin: 0;
+  padding:0;
 }
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  border: solid 1px red;
+}
+
+
+.a {
+  background: green;
+  flex: 0 1 100%;
+  height: 100px;
+}
+.b {
+  background: blue;
+  flex: 0 1 75%;
+  height: 100px;
+}
+.c {
+  background: orange;
+  flex: 0 1 25%;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  .b, .c {
+    flex: 0 1 100%;
+  }
+  .b {
+    height: 300px;
+  }
+}
+
